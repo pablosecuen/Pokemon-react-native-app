@@ -11,7 +11,7 @@ basic app build to present in a work interview for riley
 
 - 🔭 I’m currently working on [Pet Friendly Universe](https://petfriendlyuniverse.vercel.app/)
 
-- 🌱 I’m currently learning **Typescript, React Native and Angular**
+- 🌱 I’m currently learning **React Native**
 
 - 👨‍💻 All of my projects are available at [https://www.linkedin.com/in/pablo-j-amico/](https://www.linkedin.com/in/pablo-j-amico/)
 
