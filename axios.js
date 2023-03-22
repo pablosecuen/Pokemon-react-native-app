@@ -10,6 +10,7 @@ const fetchPokemons = async () => {
         axios.get(r.url).then((response) => response.data)
       )
     ); //declare an "initial state (eventough there is no redux here, it's just an example app)" to save the pokemons
+    console.log(pokemons);
     return pokemons;
   } catch (error) {
     console.error(error);

@@ -79,6 +79,7 @@ const styles = StyleSheet.create({
   },
   detailContainer: {},
   stats: {
+    display: "flex-row",
     width: "45%",
     fontSize: "16px",
     fontFamily: "Helvetica",

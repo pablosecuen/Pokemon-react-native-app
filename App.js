@@ -38,7 +38,7 @@ export default function App() {
   useEffect(() => {
     const fetchData = async () => {
       // Wait for 2 seconds before fetching data, function async and previous error handling in it's own separate module
-      await new Promise((resolve) => setTimeout(resolve, 500));
+      await new Promise((resolve) => setTimeout(resolve, 2000));
       const data = await fetchPokemons();
       setPokemons(data);
       setIsLoading(false); // set loading state to false once data is fetched
@@ -93,8 +93,22 @@ export default function App() {
                 marginTop: 50,
               }}
             />
-            <Text>{item.attack}</Text>
-            <Text>{item.defense}</Text>
+            <View
+              style={{
+                width: "100%",
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-around",
+                marginTop: 15,
+              }}
+            >
+              <Text style={styles.stats}>
+                Attack: {item.stats[0].base_stat}
+              </Text>
+              <Text style={styles.stats}>
+                Defense: {item.stats[2].base_stat}
+              </Text>
+            </View>
           </ImageBackground>
         </View>
       </TouchableWithoutFeedback>
